@@ -3,6 +3,10 @@ import random
 
 app = FastAPI()
 
+@app.get("/random")
+def read_root():
+    return {"message": "Random roast!"}
+
 # Categorized IT Roasts
 roasts = {
     "general": [
